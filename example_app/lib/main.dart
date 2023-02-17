@@ -35,18 +35,43 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter App'),
+        title: Text('Flutter App'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        // mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
             width: double.infinity,
-            child: const Card(
+            child: Card(
               color: Colors.blue,
-              elevation: 5,
               child: Text('CHART!'),
+              elevation: 5,
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: Container(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Title'),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Amount'),
+                  ),
+                  TextButton(
+                    style: ButtonStyle(
+                      foregroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blue),
+                    ),
+                    onPressed: () {},
+                    child: Text('TextButton'),
+                  )
+                ],
+              ),
             ),
           ),
           Column(
@@ -55,7 +80,7 @@ class MyHomePage extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Container(
-                      margin: const EdgeInsets.symmetric(
+                      margin: EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 15,
                       ),
@@ -65,10 +90,10 @@ class MyHomePage extends StatelessWidget {
                           width: 2,
                         ),
                       ),
-                      padding: const EdgeInsets.all(10),
+                      padding: EdgeInsets.all(10),
                       child: Text(
-                        tx.amount.toString(),
-                        style: const TextStyle(
+                        '\$${tx.amount}',
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                           color: Colors.purple,
@@ -80,14 +105,14 @@ class MyHomePage extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           tx.title,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
-                          DateFormat().format(tx.date),
-                          style: const TextStyle(
+                          DateFormat.yMMMd().format(tx.date),
+                          style: TextStyle(
                             color: Colors.grey,
                           ),
                         ),
