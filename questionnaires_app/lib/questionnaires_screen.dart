@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './dummy_data.dart';
-import './questionnaires_item.dart';
+import 'questionnaire_item.dart';
 
 class QuestionnairesScreen extends StatelessWidget {
   @override
@@ -11,9 +11,11 @@ class QuestionnairesScreen extends StatelessWidget {
           'Questionnaires',
         ),
       ),
+      // ---------- GridView
       body: GridView(
+        padding: const EdgeInsets.all(25),
         children: DUMMY_CATEGORIES
-            .map((catData) => QuestionnairesItem(catData.title, catData.color))
+            .map((catData) => QuestionnaireItem(catData.title, catData.color))
             .toList(),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,

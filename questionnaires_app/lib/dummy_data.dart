@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import './models/questionnaire.dart';
 
 const DUMMY_CATEGORIES = const [

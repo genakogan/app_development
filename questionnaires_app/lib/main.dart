@@ -9,14 +9,29 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Questionnaires',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        textTheme: ThemeData.light().textTheme.copyWith(
+            bodyLarge: TextStyle(
+              color: Color.fromRGBO(20, 51, 51, 1),
+            ),
+            bodyMedium: TextStyle(
+              color: Color.fromRGBO(20, 51, 51, 1),
+            ),
+            titleMedium: TextStyle(
+              fontSize: 20,
+              fontFamily: 'Raleway',
+              fontWeight: FontWeight.normal,
+            )),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blueGrey)
+            .copyWith(secondary: Colors.amber),
       ),
       home: QuestionnairesScreen(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+
+/*class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -26,14 +41,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Questionnaires'),
+        title: Text('Questinnaires'),
       ),
       body: Center(
         child: Text('Navigation Time!'),
       ),
     );
   }
-}
+}*/
 
 
 //import 'package:questionnaires_app/result.dart';
