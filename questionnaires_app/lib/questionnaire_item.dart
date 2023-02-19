@@ -2,19 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:questionnaires_app/questionnaire_content.dart';
 
 class QuestionnaireItem extends StatelessWidget {
+  final String id;
   final String title;
   final Color color;
 
-  QuestionnaireItem(this.title, this.color);
+  QuestionnaireItem(this.id, this.title, this.color);
 
   void selectQuestionnaire(BuildContext ctx) {
-    Navigator.of(ctx).push(
+    /* Navigator.of(ctx).push(
       MaterialPageRoute(
         builder: (_) {
-          return QuestionnaireContent();
+          return QuestionnaireContent(id, title);
         },
       ),
     );
+  } */
+    Navigator.of(ctx).pushNamed(QuestionnaireContent.routeName,
+        arguments: {'id': id, 'title': title});
   }
 
   @override

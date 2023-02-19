@@ -11,11 +11,12 @@ class QuestionnairesScreen extends StatelessWidget {
           'Questionnaires',
         ),
       ),
-      // ---------- GridView
+      // ---------- questionnaires items view
       body: GridView(
         padding: const EdgeInsets.all(25),
         children: DUMMY_CATEGORIES
-            .map((catData) => QuestionnaireItem(catData.title, catData.color))
+            .map((catData) =>
+                QuestionnaireItem(catData.id, catData.title, catData.color))
             .toList(),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,

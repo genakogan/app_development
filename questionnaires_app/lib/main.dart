@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:questionnaires_app/questionnaire_content.dart';
 import 'questionnaires_screen.dart';
 
 void main() => runApp(MyApp());
@@ -7,25 +8,31 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Questionnaires',
+      title: 'DeliMeals',
       theme: ThemeData(
-        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        canvasColor: Color.fromRGBO(15, 113, 41, 1),
+        fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-            bodyLarge: TextStyle(
+            bodyText1: TextStyle(
               color: Color.fromRGBO(20, 51, 51, 1),
             ),
-            bodyMedium: TextStyle(
+            bodyText2: TextStyle(
               color: Color.fromRGBO(20, 51, 51, 1),
             ),
-            titleMedium: TextStyle(
+            subtitle1: TextStyle(
               fontSize: 20,
-              fontFamily: 'Raleway',
-              fontWeight: FontWeight.normal,
+              fontFamily: 'RobotoCondensed',
+              fontWeight: FontWeight.bold,
             )),
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blueGrey)
             .copyWith(secondary: Colors.amber),
       ),
-      home: QuestionnairesScreen(),
+      //home: QuestionnairesScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': ((ctx) => QuestionnairesScreen()),
+        QuestionnaireContent.routeName: ((ctx) => QuestionnaireContent()),
+      },
     );
   }
 }
