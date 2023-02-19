@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:questionnaires_app/questionnaire_content.dart';
-import 'questionnaires_screen.dart';
+import 'package:questionnaires_app/screens/meal_detail_screen.dart';
+import 'screens/questionnaire_content_screen.dart';
+import 'screens/questionnaires_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,7 +32,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': ((ctx) => QuestionnairesScreen()),
-        QuestionnaireContent.routeName: ((ctx) => QuestionnaireContent()),
+        QuestionnaireContentScreen.routeName: ((ctx) =>
+            QuestionnaireContentScreen()),
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
     );
   }

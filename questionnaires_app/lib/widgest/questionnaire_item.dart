@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:questionnaires_app/questionnaire_content.dart';
+import '/screens/questionnaire_content_screen.dart';
 
 class QuestionnaireItem extends StatelessWidget {
   final String id;
@@ -17,7 +17,7 @@ class QuestionnaireItem extends StatelessWidget {
       ),
     );
   } */
-    Navigator.of(ctx).pushNamed(QuestionnaireContent.routeName,
+    Navigator.of(ctx).pushNamed(QuestionnaireContentScreen.routeName,
         arguments: {'id': id, 'title': title});
   }
 

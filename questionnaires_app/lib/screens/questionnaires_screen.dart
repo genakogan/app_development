@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './dummy_data.dart';
-import 'questionnaire_item.dart';
+import '../dummy_data.dart';
+import '../widgest/questionnaire_item.dart';
 
 class QuestionnairesScreen extends StatelessWidget {
   @override
