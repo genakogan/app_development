@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:questionnaires_app/widgest/meal_item.dart';
-import '../dummy_data.dart';
+import '../widgest/meal_item.dart';
+import '../../dummy_data.dart';
 
 class QuestionnaireContentScreen extends StatelessWidget {
   /* final String id;

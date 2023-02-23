@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:questionnaires_app/screens/meal_detail_screen.dart';
-import 'screens/questionnaire_content_screen.dart';
-import 'screens/questionnaires_screen.dart';
+import 'old/screens/meal_detail_screen.dart';
+import 'old/screens/questionnaire_content_screen.dart';
+import 'old/screens/questionnaires_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,8 +40,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-/*class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -58,18 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}*/
+}
 
+/* import './old/result.dart';
 
-//import 'package:questionnaires_app/result.dart';
+import './old/quiz.dart';
 
-//import './quiz.dart';
-
-// void main() {
-//   runApp(MyApp());
-// }
-
-/*void main() => runApp(MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
@@ -155,4 +149,62 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
-}*/
+} */
+
+
+/* import 'package:flutter/material.dart';
+
+import 'models/answer.dart';
+import 'models/question.dart';
+import 'models/questionnaire.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Questionnaire Demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Questionnaire Demo'),
+        ),
+        body: Questionnaire(
+          questions: [
+            Question(
+              text: 'What is your favorite color?',
+              answers: [
+                Answer(text: 'Red', score: 10),
+                Answer(text: 'Blue', score: 5),
+                Answer(text: 'Green', score: 2),
+              ],
+            ),
+            Question(
+              text: 'What is your favorite animal?',
+              answers: [
+                Answer(text: 'Dog', score: 10),
+                Answer(text: 'Cat', score: 5),
+                Answer(text: 'Bird', score: 2),
+              ],
+            ),
+            Question(
+              text: 'What is your favorite food?',
+              answers: [
+                Answer(text: 'Pizza', score: 10),
+                Answer(text: 'Burgers', score: 5),
+                Answer(text: 'Tacos', score: 2),
+              ],
+            ),
+          ],
+          onSubmit: () {
+            // TODO: Calculate and display the total score
+            print('Questionnaire submitted!');
+          },
+        ),
+      ),
+    );
+  }
+}
+ */

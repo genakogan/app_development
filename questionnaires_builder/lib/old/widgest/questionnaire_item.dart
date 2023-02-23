@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/screens/questionnaire_content_screen.dart';
+import '../screens/questionnaire_content_screen.dart';
 
 class QuestionnaireItem extends StatelessWidget {
   final String id;

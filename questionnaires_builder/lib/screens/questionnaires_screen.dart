@@ -1,30 +1,11 @@
-import 'package:flutter/material.dart';
-import '../dummy_data.dart';
-import '../widgest/questionnaire_item.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 
 class QuestionnairesScreen extends StatelessWidget {
+  const QuestionnairesScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Questionnaires',
-        ),
-      ),
-      // ---------- questionnaires items view
-      body: GridView(
-        padding: const EdgeInsets.all(25),
-        children: DUMMY_CATEGORIES
-            .map((catData) =>
-                QuestionnaireItem(catData.id, catData.title, catData.color))
-            .toList(),
-        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 200,
-          childAspectRatio: 3 / 2,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
-        ),
-      ),
-    );
+    return const Placeholder();
   }
 }

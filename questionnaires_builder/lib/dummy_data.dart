@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import './models/questionnaire.dart';
-import './models/meal.dart';
+import 'old/models/questionnaire.dart';
+import 'old/models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
   Questionnaire(
     id: 'c1',
-    title: 'Italian',
+    title: 'SUS',
     color: Colors.purple,
   ),
   Questionnaire(
     id: 'c2',
-    title: 'Quick & Easy',
+    title: 'TAM',
     color: Colors.red,
   ),
   Questionnaire(
