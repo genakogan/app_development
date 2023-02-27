@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/questionnaires_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,13 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Questinnaires',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        canvasColor: Color.fromRGBO(4, 17, 17, 1),
-      ),
-      home: const MyHomePage(title: 'Questinnaires'),
-    );
+        title: 'Questinnaires',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          canvasColor: Color.fromRGBO(4, 17, 17, 1),
+        ),
+        //home: const MyHomePage(title: 'Questinnaires'),
+        initialRoute: '/',
+        routes: {
+          '/': ((ctx) => QuestionnairesScreen()),
+        });
   }
 }
 
