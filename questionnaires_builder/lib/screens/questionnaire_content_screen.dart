@@ -40,8 +40,32 @@ class _QuestionnaireContentScreenState
   }
 
   void _submitAnswers() {
-    // TODO: Implement logic to submit answers
-    print(_scores);
+    //final numQuestions = questions.length;
+
+    if (_scores.length < 10) {
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: Text('Error'),
+          content: Text('Please answer all questions before submitting.'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text('OK'),
+            ),
+          ],
+        ),
+      );
+    } else {
+      // TODO: Implement logic to submit answers
+      print(_scores);
+    }
+  }
+
+  void _resetAnswers() {
+    setState(() {
+      _scores.clear();
+    });
   }
 
   @override
@@ -103,9 +127,18 @@ class _QuestionnaireContentScreenState
             ),
           ),
           SizedBox(height: 16),
-          ElevatedButton(
-            onPressed: _submitAnswers,
-            child: Text('Submit Answers'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly, // optional
+            children: [
+              ElevatedButton(
+                onPressed: _submitAnswers,
+                child: Text('Submit Answers'),
+              ),
+              ElevatedButton(
+                onPressed: _resetAnswers,
+                child: Text('Reset Answers'),
+              ),
+            ],
           ),
         ],
       ),
