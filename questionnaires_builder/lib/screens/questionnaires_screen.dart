@@ -13,6 +13,7 @@ class QuestionnairesScreen extends StatelessWidget {
         ),
       ),
       body: GridView(
+          padding: const EdgeInsets.all(25),
           children: DUMMY_CATEGORIES
               .map((catData) =>
                   QuestionnaireItem(catData.id, catData.title, catData.color))

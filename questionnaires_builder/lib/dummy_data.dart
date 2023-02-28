@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'models/answer.dart';
+import 'models/question.dart';
 import 'old/models/questionnaire.dart';
 import 'old/models/meal.dart';
 
@@ -13,7 +15,7 @@ const DUMMY_CATEGORIES = const [
     title: 'TAM',
     color: Colors.red,
   ),
-  Questionnaire(
+  /*  Questionnaire(
     id: 'c3',
     title: 'Hamburgers',
     color: Colors.orange,
@@ -52,10 +54,126 @@ const DUMMY_CATEGORIES = const [
     id: 'c10',
     title: 'Summer',
     color: Colors.teal,
+  ), */
+];
+
+const DUMMY_QUESTION = const [
+  Question(
+    text: 'I think that I would like to use this system frequently.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 1),
+      Answer(text: 'Disagree', score: 2),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 4),
+      Answer(text: 'Strongly agree', score: 5),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text: 'I found the system unnecessarily complex.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 5),
+      Answer(text: 'Disagree', score: 4),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 2),
+      Answer(text: 'Strongly agree', score: 1),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text: 'I thought the system was easy to use.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 1),
+      Answer(text: 'Disagree', score: 2),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 4),
+      Answer(text: 'Strongly agree', score: 5),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text:
+        'I think that I would need the support of a technical person to be able to use this system.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 5),
+      Answer(text: 'Disagree', score: 4),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 2),
+      Answer(text: 'Strongly agree', score: 1),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text: 'I found the various functions in this system were well integrated.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 1),
+      Answer(text: 'Disagree', score: 2),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 4),
+      Answer(text: 'Strongly agree', score: 5),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text: 'I thought there was too much inconsistency in this system.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 5),
+      Answer(text: 'Disagree', score: 4),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 2),
+      Answer(text: 'Strongly agree', score: 1),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text:
+        'I would imagine that most people would learn to use this system very quickly.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 1),
+      Answer(text: 'Disagree', score: 2),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 4),
+      Answer(text: 'Strongly agree', score: 5),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text: 'I found the system very cumbersome to use.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 1),
+      Answer(text: 'Disagree', score: 2),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 4),
+      Answer(text: 'Strongly agree', score: 5),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text: 'I felt very confident using the system.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 1),
+      Answer(text: 'Disagree', score: 2),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 4),
+      Answer(text: 'Strongly agree', score: 5),
+    ],
+    questionnaire: "TAM",
+  ),
+  Question(
+    text:
+        'I needed to learn a lot of things before I could get going with this system.',
+    answers: [
+      Answer(text: 'Strongly disagree', score: 1),
+      Answer(text: 'Disagree', score: 2),
+      Answer(text: 'Neutral', score: 3),
+      Answer(text: 'Agree', score: 4),
+      Answer(text: 'Strongly agree', score: 5),
+    ],
+    questionnaire: "TAM",
   ),
 ];
 
-const DUMMY_MEALS = const [
+/* const DUMMY_MEALS = const [
   Meal(
     id: 'm1',
     categories: [
@@ -405,3 +523,4 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
 ];
+ */

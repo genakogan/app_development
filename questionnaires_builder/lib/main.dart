@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'screens/meal_detail_screen.dart';
 import 'screens/questionnaire_content_screen.dart';
-
 import 'screens/questionnaires_screen.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Questinnaires',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        canvasColor: Color.fromRGBO(4, 17, 17, 1),
+        canvasColor: Color.fromRGBO(235, 224, 211, 1),
       ),
       //home: const MyHomePage(title: 'Questinnaires'),
       initialRoute: '/',
@@ -26,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/': ((ctx) => QuestionnairesScreen()),
         QuestionnaireContentScreen.routeName: ((ctx) =>
             QuestionnaireContentScreen()),
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
     );
   }

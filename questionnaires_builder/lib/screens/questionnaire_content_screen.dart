@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import '../old/widgest/meal_item.dart';
+/* import 'package:flutter/material.dart';
+import '../widgest/meal_item.dart';
 
 import '../../dummy_data.dart';
 
@@ -36,6 +36,28 @@ class QuestionnaireContentScreen extends StatelessWidget {
           );
         },
         itemCount: categoryMeals.length,
+      ),
+    );
+  }
+}
+ */
+
+import 'package:flutter/material.dart';
+import '../widgest/meal_item.dart';
+
+import '../../dummy_data.dart';
+
+class QuestionnaireContentScreen extends StatelessWidget {
+  static const routeName = '/questionnaire-content';
+  @override
+  Widget build(BuildContext context) {
+    final routeArgs =
+        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
+    final id = routeArgs['id'];
+    final title = routeArgs['title'];
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(id),
       ),
     );
   }

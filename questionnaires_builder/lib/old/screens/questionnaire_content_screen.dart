@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgest/meal_item.dart';
+import '../../widgest/meal_item.dart';
 import '../../dummy_data.dart';
 
 class QuestionnaireContentScreen extends StatelessWidget {
