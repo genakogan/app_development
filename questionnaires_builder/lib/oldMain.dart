@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'old/screens/meal_detail_screen.dart';
+import 'screens/meal_detail_screen.dart';
 import 'old/screens/questionnaire_content_screen.dart';
 import 'old/screens/questionnaires_screen.dart';
 
