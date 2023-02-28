@@ -6,12 +6,12 @@ import 'old/models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
   Questionnaire(
-    id: 'c1',
+    id: 'SUS',
     title: 'SUS',
     color: Colors.purple,
   ),
   Questionnaire(
-    id: 'c2',
+    id: 'TAM',
     title: 'TAM',
     color: Colors.red,
   ),
@@ -59,6 +59,7 @@ const DUMMY_CATEGORIES = const [
 
 const DUMMY_QUESTION = const [
   Question(
+    id: "SUS1",
     text: 'I think that I would like to use this system frequently.',
     answers: [
       Answer(text: 'Strongly disagree', score: 1),
@@ -67,9 +68,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 4),
       Answer(text: 'Strongly agree', score: 5),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS2",
     text: 'I found the system unnecessarily complex.',
     answers: [
       Answer(text: 'Strongly disagree', score: 5),
@@ -78,9 +80,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 2),
       Answer(text: 'Strongly agree', score: 1),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS3",
     text: 'I thought the system was easy to use.',
     answers: [
       Answer(text: 'Strongly disagree', score: 1),
@@ -89,9 +92,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 4),
       Answer(text: 'Strongly agree', score: 5),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS3",
     text:
         'I think that I would need the support of a technical person to be able to use this system.',
     answers: [
@@ -101,9 +105,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 2),
       Answer(text: 'Strongly agree', score: 1),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS4",
     text: 'I found the various functions in this system were well integrated.',
     answers: [
       Answer(text: 'Strongly disagree', score: 1),
@@ -112,9 +117,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 4),
       Answer(text: 'Strongly agree', score: 5),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS5",
     text: 'I thought there was too much inconsistency in this system.',
     answers: [
       Answer(text: 'Strongly disagree', score: 5),
@@ -123,9 +129,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 2),
       Answer(text: 'Strongly agree', score: 1),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS6",
     text:
         'I would imagine that most people would learn to use this system very quickly.',
     answers: [
@@ -135,9 +142,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 4),
       Answer(text: 'Strongly agree', score: 5),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS7",
     text: 'I found the system very cumbersome to use.',
     answers: [
       Answer(text: 'Strongly disagree', score: 1),
@@ -146,9 +154,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 4),
       Answer(text: 'Strongly agree', score: 5),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS8",
     text: 'I felt very confident using the system.',
     answers: [
       Answer(text: 'Strongly disagree', score: 1),
@@ -157,9 +166,10 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 4),
       Answer(text: 'Strongly agree', score: 5),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
   Question(
+    id: "SUS9",
     text:
         'I needed to learn a lot of things before I could get going with this system.',
     answers: [
@@ -169,7 +179,7 @@ const DUMMY_QUESTION = const [
       Answer(text: 'Agree', score: 4),
       Answer(text: 'Strongly agree', score: 5),
     ],
-    questionnaire: "TAM",
+    questionnaire: "SUS",
   ),
 ];
 
