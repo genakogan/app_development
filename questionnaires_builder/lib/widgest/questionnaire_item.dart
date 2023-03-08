@@ -9,14 +9,6 @@ class QuestionnaireItem extends StatelessWidget {
   QuestionnaireItem(this.id, this.title, this.color);
 
   void selectQuestionnaire(BuildContext ctx) {
-    /* Navigator.of(ctx).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return QuestionnaireContent(id, title);
-        },
-      ),
-    );
-  } */
     Navigator.of(ctx).pushNamed(QuestionnaireContentScreen.routeName,
         arguments: {'id': id, 'title': title});
   }
@@ -26,7 +18,7 @@ class QuestionnaireItem extends StatelessWidget {
     return InkWell(
       onTap: () => selectQuestionnaire(context),
       splashColor: Theme.of(context).primaryColor,
-      borderRadius: BorderRadius.circular(15),
+      //borderRadius: BorderRadius.circular(50),
       child: Container(
         padding: const EdgeInsets.all(33),
         child: Text(
