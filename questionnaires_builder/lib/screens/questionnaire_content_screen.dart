@@ -1,24 +1,4 @@
-/* import 'package:flutter/material.dart';
-
-class QuestionnaireContentScreen extends StatelessWidget {
-  static const routeName = '/questionnaire-content';
-  @override
-  Widget build(BuildContext context) {
-    final routeArgs =
-        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
-    final id = routeArgs['id'];
-    final title = routeArgs['title'];
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(id),
-      ),
-    );
-  }
-}
- */
-
 import 'package:flutter/material.dart';
-
 import '../dummy_data.dart';
 
 class QuestionnaireContentScreen extends StatefulWidget {

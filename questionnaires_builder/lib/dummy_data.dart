@@ -2,13 +2,32 @@ import 'package:flutter/material.dart';
 import 'models/answer.dart';
 import 'models/question.dart';
 import 'old/models/questionnaire.dart';
-import 'old/models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
   Questionnaire(
     id: 'SUS',
     title: 'SUS',
     color: Colors.purple,
+  ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
+  ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
+  ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
+  ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
   ),
   Questionnaire(
     id: 'TAM',
