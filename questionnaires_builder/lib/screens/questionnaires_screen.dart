@@ -26,22 +26,24 @@ class QuestionnairesScreen extends StatelessWidget {
     );
   }
 
-  /*  Widget _buildGridViewSection() {
-    return GridView(
-      shrinkWrap: true,
-      padding: const EdgeInsets.all(25),
-      children: DUMMY_CATEGORIES
-          .map((catData) =>
-              QuestionnaireItem(catData.id, catData.title, catData.color))
-          .toList(),
-      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-        maxCrossAxisExtent: 200,
-        childAspectRatio: 3 / 2,
-        crossAxisSpacing: 20,
-        mainAxisSpacing: 20,
+  Widget _buildGridViewSection() {
+    return Expanded(
+      child: GridView.builder(
+        padding: const EdgeInsets.all(25),
+        itemCount: DUMMY_CATEGORIES.length,
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 200,
+          childAspectRatio: 3 / 2,
+          crossAxisSpacing: 20,
+          mainAxisSpacing: 20,
+        ),
+        itemBuilder: (ctx, index) {
+          final catData = DUMMY_CATEGORIES[index];
+          return QuestionnaireItem(catData.id, catData.title, catData.color);
+        },
       ),
     );
-  } */
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +59,7 @@ class QuestionnairesScreen extends StatelessWidget {
         children: <Widget>[
           _buildChartSection(),
           _buildUserQuestionnaireSection(),
-          //_buildGridViewSection(),
+          _buildGridViewSection(),
         ],
       ),
     );

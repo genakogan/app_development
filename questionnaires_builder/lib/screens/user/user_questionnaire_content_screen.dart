@@ -9,7 +9,7 @@ class UserQuestionnaireContentScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
+      height: 200,
       child: SingleChildScrollView(
         child: Column(
           children: transactions.map((tx) {
