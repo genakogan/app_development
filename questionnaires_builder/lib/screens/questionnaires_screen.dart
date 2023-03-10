@@ -53,14 +53,16 @@ class QuestionnairesScreen extends StatelessWidget {
           'Questionnaires',
         ),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          _buildChartSection(),
-          _buildUserQuestionnaireSection(),
-          _buildGridViewSection(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            _buildChartSection(),
+            _buildUserQuestionnaireSection(),
+            _buildGridViewSection(),
+          ],
+        ),
       ),
     );
   }
