@@ -26,7 +26,7 @@ class QuestionnairesScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildGridViewSection() {
+  /*  Widget _buildGridViewSection() {
     return GridView(
       shrinkWrap: true,
       padding: const EdgeInsets.all(25),
@@ -41,7 +41,7 @@ class QuestionnairesScreen extends StatelessWidget {
         mainAxisSpacing: 20,
       ),
     );
-  }
+  } */
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class QuestionnairesScreen extends StatelessWidget {
         children: <Widget>[
           _buildChartSection(),
           _buildUserQuestionnaireSection(),
-          _buildGridViewSection(),
+          //_buildGridViewSection(),
         ],
       ),
     );
