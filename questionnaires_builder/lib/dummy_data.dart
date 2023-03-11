@@ -34,6 +34,31 @@ const DUMMY_CATEGORIES = const [
     title: 'TAM',
     color: Colors.red,
   ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
+  ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
+  ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
+  ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
+  ),
+  Questionnaire(
+    id: 'TAM',
+    title: 'TAM',
+    color: Colors.red,
+  ),
   /*  Questionnaire(
     id: 'c3',
     title: 'Hamburgers',
