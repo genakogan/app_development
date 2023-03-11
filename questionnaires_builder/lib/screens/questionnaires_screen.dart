@@ -14,6 +14,7 @@ class QuestionnairesScreen extends StatelessWidget {
         title: Text(
           'Questionnaires',
         ),
+        actions: <Widget>[IconButton(icon: Icon(Icons.add), onPressed: () {})],
       ),
       body: ListView(
         children: [

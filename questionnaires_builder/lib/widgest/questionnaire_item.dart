@@ -20,6 +20,7 @@ class QuestionnaireItem extends StatelessWidget {
       splashColor: Theme.of(context).primaryColor,
       //borderRadius: BorderRadius.circular(50),
       child: Container(
+        height: 200,
         padding: const EdgeInsets.all(33),
         child: Text(
           title,
